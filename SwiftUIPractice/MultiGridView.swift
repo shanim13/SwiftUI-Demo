@@ -27,6 +27,7 @@ struct MultiGridView: View {
     }
 
     var body: some View {
+        NavigationView {
             ScrollView {
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 20) {
                     ForEach(sampleCafes) { cafe in
@@ -76,12 +77,13 @@ struct MultiGridView: View {
                     
                     NavigationLink(destination: CoffeeSearchViewController(), label:  {
                         Image(systemName: "magnifyingglass")
-                           .font(.title)
-                           .foregroundColor(.brown)
-                   })
+                            .font(.title)
+                            .foregroundColor(.brown)
+                    })
                 }
             }
         }
+    }
 }
 
 struct MultiGridView_Previews: PreviewProvider {

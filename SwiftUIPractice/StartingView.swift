@@ -34,7 +34,7 @@ struct StartingView: View {
                             .fontWeight(.heavy)
                             .shadow(color: Color(red: 0, green: 0, blue: 0,opacity: 0.8), radius: 2, x: 2, y: 2)
 
-                        NavigationLink(destination: MultiGridView()) {
+                        NavigationLink(destination: TabbarView()) {
                             HStack {
                                 Text("Get Your Coffee")
                                     .font(.headline)
